@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sound Timer</title>
+</head>
+
+<body>
+   <div id="wrapper">  <!-- class="output-span-fullscreen" -->
+        <div id="main">
+            <div id="output">
+                <div class="output_column">
+                    <span id="output-span">00:00:00</span>
+                </div>
+
+                <div class="output_column">
+                    <button id="buttonStop" class="button1">Stop</button>
+                    <button id="buttonPlay" class="button1">Start</button>
+                    <button id="buttonPause" class="button1">Pause</button>
+                </div>
+
+            </div>
+            <div id="input">
+                <div>
+                    <span>Set new time</span>
+                </div>
+                <div>
+                    <input type="number" class="setTime" id="inputHours" max="99" min="0" value ="0"
+                    >:<input type="number" class="setTime" id="inputMinutes" max="60" min="0" value ="0"
+                    >:<input type="number" class="setTime" id="inputSeconds" max="60" min="0" value ="0">
+                </div>
+
+                <div>
+                    <button id="buttonApply" class="button2">Apply</button>
+                </div>
+                
+                <div>
+                    <button id="buttonFullscreen" class="button2">fullscreen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
