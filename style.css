@@ -6,11 +6,13 @@
 body {
     padding: 0;
     margin: 0;
+    background: linear-gradient(to right, #00ddff, #bb44ff, #ff4444);
 }
 
 #wrapper, .button1, .button2, #input, .setTime {
     font-family: "RussoOne-Regular", Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
+    color: #0000a0;
 }
 
 #wrapper {
@@ -27,6 +29,8 @@ body {
 
 .output-span-fullscreen #main {
     border: none;
+    background: none;
+    box-shadow: none;
 }
 
 .output-span-fullscreen button {
@@ -39,6 +43,8 @@ body {
 
 .output-span-fullscreen #output-span {
     font-size: 200px;
+    color: #bb00ff;
+    text-shadow: 1px 10px 2px #0000a0;
 }
 
 .output-span-fullscreen #input {
@@ -51,15 +57,17 @@ body {
 }
 
 #main {
-    border: 2px solid #0000FF;
+    border: 2px solid #660088;
     width: 400px;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #bb00ff, #ff0055);
+    box-shadow: 3px 3px 4px rgba(50, 0, 72, 0.5);
 }
 
 #output {
     width: 100%;
-    border-bottom: 2px solid #0000FF;
     display: flex;
     flex-direction: column;
 }
@@ -68,12 +76,6 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 5px;
-}
-
-.button1 {
-    font-size: 24px;
-    padding: 5px 10px;
-    margin: 0 5px;
 }
 
 #input {
@@ -87,7 +89,27 @@ body {
     text-align: center;
 }
 
+.button1 {
+    font-size: 24px;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
 .button2 {
     font-size: 24px;
     margin: 5px 0;
+}
+
+.button1, .button2, input {
+    color: #000080;
+    border: none;
+    background-color: #aa0055;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(50, 0, 72, 0.5);
+}
+
+.button1:active, .button2:active {
+    border: none;
+    background-color: #7700aa;
+    color: #0000ff;
 }
